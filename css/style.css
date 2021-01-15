@@ -1,0 +1,102 @@
+body {
+
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    color: #404040;
+    text-align: center;
+}
+
+
+/*================
+    typography
+===================*/
+
+h1 {
+
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #fff;
+    margin: 2em 0;
+
+}
+
+
+h2 {
+
+    font-size: 1.3125rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+
+
+span {
+
+    font-weight: 900;
+}
+
+
+.intro p {
+
+    font-size: 1.3125rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #f7e702;
+    margin: 0;
+}
+
+.intro .top-text {
+
+    font-size: 0.625rem;
+    letter-spacing: 1.5px;
+
+}
+
+
+.register {
+
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #f7e702;
+    margin-top: 0;
+
+}
+
+
+.content-bottom {
+    
+    font-size: 0.625rem;
+    letter-spacing: 0.5px;
+    
+}
+
+
+/*================
+   intro section
+===================*/
+
+.intro {
+    
+    background-image: url(../images/bg-image.jpg);
+    padding: 0 .5em 2em;
+    background-color: #404040;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+/*================
+   main section
+===================*/
+
+
+.content {
+    
+    padding: 2em 1em;
+}
+
