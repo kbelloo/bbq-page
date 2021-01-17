@@ -1,3 +1,10 @@
+* {
+
+    box-sizing: border-box;
+
+}
+
+
 body {
 
     margin: 0;
@@ -5,6 +12,12 @@ body {
     font-size: 1rem;
     color: #404040;
     text-align: center;
+}
+
+main {
+
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -17,7 +30,7 @@ h1 {
     font-size: 2.25rem;
     font-weight: 300;
     color: #fff;
-    margin: 2em 0;
+
 
 }
 
@@ -42,14 +55,22 @@ span {
     font-size: 1.3125rem;
     text-transform: uppercase;
     font-weight: 900;
-    color: #f7e702;
+    color: #FFA51D;
     margin: 0;
 }
 
 .intro .top-text {
 
     font-size: 0.625rem;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.7px;
+    margin: 0;
+    padding-top: 3px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 5px solid #FFA51D;
+    border-image: linear-gradient(to left, #FF713B, #FFA51D) 1;
+
 
 }
 
@@ -58,17 +79,17 @@ span {
 
     font-weight: 900;
     text-transform: uppercase;
-    color: #f7e702;
+    color: #FFA51D;
     margin-top: 0;
 
 }
 
 
 .content-bottom {
-    
+
     font-size: 0.625rem;
     letter-spacing: 0.5px;
-    
+
 }
 
 
@@ -77,16 +98,19 @@ span {
 ===================*/
 
 .intro {
-    
-    background-image: url(../images/bg-image.jpg);
-    padding: 0 .5em 2em;
+
+    background-image: url(../images/bg-img.jpg);
     background-color: #404040;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-blend-mode: multiply;
+    padding: 0 .5em 2em;
     display: flex;
     flex-direction: column;
-    
+    justify-content: space-between;
+    min-height: 50vh;
+
 }
 
 
@@ -96,7 +120,129 @@ span {
 
 
 .content {
-    
+
     padding: 2em 1em;
 }
 
+.intro > *,
+.intro p,
+.content > * {
+
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/*================
+      form
+===================*/
+
+.email-collector {
+
+    width: 80%;
+    max-width: 300px;
+}
+
+input,
+.btn {
+
+    width: 100%;
+    border-radius: 7px;
+
+}
+
+input {
+
+    font-family: inherit;
+    margin-bottom: 0.875em;
+    text-align: center;
+    padding: .25em;
+    border: 1px solid #818181;
+}
+
+input:focus {
+
+    outline: none;
+}
+
+.btn {
+
+    display: inline-block;
+    background-image: linear-gradient(270deg, #FF713B 0%, #FFA51D 100%);
+    color: #fff;
+    padding: 1em 1.5em;
+    border: 0;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    border-radius: 7px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform .25s;
+}
+
+.btn:hover,
+.btn:focus {
+
+    color: black;
+    transform: scale(1.1);
+}
+
+.btn:focus {
+
+    outline: none;
+}
+
+
+
+
+/*================
+    media queries
+===================*/
+
+@media (min-width: 580px) {
+
+    body {
+
+        font-size: 1.125rem;
+    }
+
+
+    h1 {
+
+        font-size: 3.5rem;
+    }
+
+    h2,
+    .intro p {
+
+        font-size: 1.75rem;
+    }
+
+    main {
+
+        flex-direction: row;
+    }
+
+
+
+    .intro,
+    .content {
+
+        width: 50%;
+        min-height: 100vh;
+    }
+
+    .content {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+
+}
