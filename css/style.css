@@ -158,8 +158,9 @@ input {
     font-family: inherit;
     margin-bottom: 0.875em;
     text-align: center;
-    padding: .25em;
+    padding: 0.45em;
     border: 1px solid #818181;
+    font-size: 1.3rem;
 }
 
 input:focus {
@@ -203,7 +204,7 @@ input:focus {
     media queries
 ===================*/
 
-@media (min-width: 580px) {
+@media (min-width: 800px) {
 
     body {
 
